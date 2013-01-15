@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <title>Future Value of deposits functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Future Value of deposits functions">
+    <link href="../hs_desktop/design.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="hs_mainwrapper">
+    <div id="hs_head">
+    <div id="hs_logo">
+    </div>
+    <div id="hs_headtext">
+    <h2>Future Value of deposits functions</h2>
+    <p></p>
+    </div>
+    </div>
+
+    The future value of deposits are pure interest calculations. It means that you deposit some money on the bank, and do nothing.&nbsp;<div><br></div><div>If you are looking for functions around savings, where some money are periodical put into your account or withdrawn, go to the <a href="future_value_of_savings_functions.html">"future value of savings"</a> functions.&nbsp;</div><div><br></div><div>The first function, is calculating the future value:&nbsp;</div><div><br></div><div><b><i>FutureValueOfDeposit</i></b>(x; y; z )</div><div><div>Where&nbsp;</div><div>&nbsp;&nbsp; &nbsp;x = Present value</div><div>&nbsp;&nbsp; &nbsp;y = Compounding periods (years)</div><div>&nbsp;&nbsp; &nbsp;z = interest rate</div></div><div><br></div><div>The following formula is used:&nbsp;</div><div><img src="../images/future_value_deposit.png"></div><div>where f is the future value.&nbsp;</div><div><br></div><div>Example:&nbsp;</div><div>You have 10.000 on a bank account. The interest rate is 2%. What is the future value after 10 years.&nbsp;</div><div><br></div><blockquote class="webkit-indent-blockquote" style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><i>FutureValueOfDeposit(10000;10;2)=12189.9442</i></div><div><i><br></i></div></blockquote><i>----------------------</i><div><i><br></i></div><div><i><span class="Apple-style-span" style="font-style: normal;">The next function is the interest needed for a given future value.&nbsp;</span></i></div><div><i><span class="Apple-style-span" style="font-style: normal;"><br></span></i></div><div><b><i>InterestPVFV</i></b>(&nbsp;</div><div><ol><li>Present value;&nbsp;</li><li>Future Value;&nbsp;</li><li>Compounding periods (years) &nbsp; &nbsp;)&nbsp;</li></ol><div>Example:&nbsp;</div></div><div>What is the interest needed for getting the 10.000 to be 15.000 after 10 years?&nbsp;</div><div><br></div><blockquote class="webkit-indent-blockquote" style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><i>InterestPVFV(10000;15000;10)=4.137974399</i></div><div><i><br></i></div></blockquote>Let us check this with the previous function:&nbsp;<div><br></div><blockquote class="webkit-indent-blockquote" style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><i>FutureValueOfDeposit(10000;10;4.137974399)=15000</i></div><div><i><br></i></div></blockquote>This seams to be pretty accurate.&nbsp;<div><br></div><div><br></div><div>---------------------------</div><div><br></div><div>The next function is for calculating the number of years for a given future value:&nbsp;</div><div><br></div><div><div><b>YearsToFutureValue</b>(x; y; z )&nbsp;</div><div>Where&nbsp;</div><div>&nbsp;&nbsp; &nbsp;x = Present value</div><div>&nbsp;&nbsp; &nbsp;y = Future value</div><div>&nbsp;&nbsp; &nbsp;z = annual interest rate</div></div><div><br></div><div>The following formula is used:&nbsp;</div><div><img src="../images/yearstofuturevaluedep.png"></div><div><br></div><div>Example:&nbsp;</div><div>Let us say, that we test this with the values from the previous example, and see if we get 10 years:&nbsp;</div><div><br></div><blockquote class="webkit-indent-blockquote" style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><i>YearsToFutureValue(10000;15000;4.137974399)=9.999999995</i></div><div><i><br></i></div></blockquote><i>With a little rounding, this seems to be pretty accurate.&nbsp;</i><div><i><br></i></div><div><i>This was the last one in this series. The next serie is the <a href="future_value_of_savings_functions.html">Future Value of Savings.</a>&nbsp;<br></i><div><br></div><div><div><div><div><i><span class="Apple-style-span" style="font-style: normal;"><br></span></i></div><div><i><span class="Apple-style-span" style="font-style: normal;"><br></span></i><div><br></div></div></div></div></div></div><div id="hs_relatedtopics"><span><b>RELATED TOPICS</b></span><br /><ul><li><a href="financial_functions.html">Financial functions</a></li><li><a href="annuity_loan_calculations.html">Annuity loan calculations</a></li><li><a href="future_value_of_savings_functions.html">Future value of savings functions</a></li></ul></div>
+    </div>
+  </body>
+</html>

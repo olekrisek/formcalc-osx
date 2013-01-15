@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="FormulaCalculator" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CDFormulas" representedClassName="CDFormulas" syncable="YES">
+        <attribute name="formula" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intoVariable" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortorder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cDFunction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDFunctionLib" inverseName="cdFormulas" inverseEntity="CDFunctionLib" syncable="YES"/>
+    </entity>
+    <entity name="CDFunctionLib" representedClassName="CDFunctionLib" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendlyname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noFormulas" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noParameters" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="referenceURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cdFormulas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDFormulas" inverseName="cDFunction" inverseEntity="CDFormulas" syncable="YES"/>
+        <relationship name="cDParameters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDParameters" inverseName="cDFunction" inverseEntity="CDParameters" syncable="YES"/>
+        <relationship name="cdPath" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CDPath" inverseName="cdFunctions" inverseEntity="CDPath" syncable="YES"/>
+    </entity>
+    <entity name="CDParameters" representedClassName="CDParameters" syncable="YES">
+        <attribute name="intoVariable" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cDFunction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDFunctionLib" inverseName="cDParameters" inverseEntity="CDFunctionLib" syncable="YES"/>
+    </entity>
+    <entity name="CDPath" representedClassName="CDPath" syncable="YES">
+        <attribute name="friendlyname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cdFunctions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDFunctionLib" inverseName="cdPath" inverseEntity="CDFunctionLib" syncable="YES"/>
+    </entity>
+    <entity name="Constants" representedClassName="Constants" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" defaultValueString="new Constant" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" defaultValueString="xx" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Deny" destinationEntity="ConstCategories" inverseName="constants" inverseEntity="ConstCategories" syncable="YES"/>
+    </entity>
+    <entity name="ConstCategories" representedClassName="ConstCategories" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="New Category" syncable="YES"/>
+        <relationship name="constants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Constants" inverseName="category" inverseEntity="Constants" syncable="YES"/>
+    </entity>
+    <entity name="PrintRoll" representedClassName="PrintRoll" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printRollText" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ValueStore" representedClassName="ValueStore" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="string" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDFormulas" positionX="232" positionY="-90" width="128" height="103"/>
+        <element name="CDFunctionLib" positionX="180" positionY="348" width="128" height="178"/>
+        <element name="CDParameters" positionX="-36" positionY="-9" width="128" height="103"/>
+        <element name="CDPath" positionX="432" positionY="123" width="128" height="88"/>
+        <element name="Constants" positionX="-234" positionY="171" width="128" height="105"/>
+        <element name="ConstCategories" positionX="-45" positionY="204" width="128" height="75"/>
+        <element name="PrintRoll" positionX="232" positionY="-261" width="128" height="105"/>
+        <element name="ValueStore" positionX="81" positionY="-147" width="128" height="73"/>
+    </elements>
+</model>

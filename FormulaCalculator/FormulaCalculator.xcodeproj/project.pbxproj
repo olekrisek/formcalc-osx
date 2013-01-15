@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0B4FE01644D22D0058E5C1 /* ParseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F874153163212CF005FDF3D /* ParseKit.framework */; };
+		7F0D90B6163E2A45002C11A4 /* CalcFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D90B5163E2A45002C11A4 /* CalcFunctions.m */; };
+		7F0D90BA163F19C9002C11A4 /* FunctionLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D90B9163F19C9002C11A4 /* FunctionLibrary.m */; };
+		7F4FA00E164FBAF800E71E99 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4FA00D164FBAF800E71E99 /* Constants.m */; };
+		7F64D88F16313ECE00813BEB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64D88E16313ECE00813BEB /* Cocoa.framework */; };
+		7F64D89916313ECE00813BEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F64D89716313ECE00813BEB /* InfoPlist.strings */; };
+		7F64D89B16313ECE00813BEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64D89A16313ECE00813BEB /* main.m */; };
+		7F64D89F16313ECE00813BEB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7F64D89D16313ECE00813BEB /* Credits.rtf */; };
+		7F64D8A216313ECE00813BEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64D8A116313ECE00813BEB /* AppDelegate.m */; };
+		7F64D8A516313ECF00813BEB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F64D8A316313ECF00813BEB /* MainMenu.xib */; };
+		7F64D8A816313ECF00813BEB /* FormulaCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F64D8A616313ECF00813BEB /* FormulaCalculator.xcdatamodeld */; };
+		7F64D8B016313ECF00813BEB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64D8AF16313ECF00813BEB /* SenTestingKit.framework */; };
+		7F64D8B116313ECF00813BEB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64D88E16313ECE00813BEB /* Cocoa.framework */; };
+		7F64D8B916313ECF00813BEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F64D8B716313ECF00813BEB /* InfoPlist.strings */; };
+		7F64D8BC16313ECF00813BEB /* myCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64D8BB16313ECF00813BEB /* myCalcTests.m */; };
+		7F64D8C7163167FC00813BEB /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64D8C6163167FC00813BEB /* Calculator.m */; };
+		7F6A485716679A6300FEA6AE /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A485616679A6300FEA6AE /* iTunesArtwork.png */; };
+		7F6A485A16679A7000FEA6AE /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A485916679A7000FEA6AE /* iTunesArtwork@2x.png */; };
+		7F6A485C1668110D00FEA6AE /* formcalcicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A485B1668110D00FEA6AE /* formcalcicon.icns */; };
+		7F874154163212CF005FDF3D /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F874153163212CF005FDF3D /* ParseKit.framework */; };
+		7FA047F3164D5C1400388A0B /* savelogg-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA047F2164D5C1400388A0B /* savelogg-icon.png */; };
+		7FA047F8164DB75700388A0B /* PrintRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA047F7164DB75700388A0B /* PrintRoll.m */; };
+		7FA04807164E19EA00388A0B /* ValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04806164E19EA00388A0B /* ValueStore.m */; };
+		7FA0480A164E1CEC00388A0B /* CDFunctionLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04809164E1CEC00388A0B /* CDFunctionLib.m */; };
+		7FA0480D164E1CEC00388A0B /* CDFormulas.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0480C164E1CEC00388A0B /* CDFormulas.m */; };
+		7FA04810164E1CED00388A0B /* CDParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0480F164E1CEC00388A0B /* CDParameters.m */; };
+		7FA04813164E1CED00388A0B /* CDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04812164E1CED00388A0B /* CDPath.m */; };
+		7FAD42331645882700BA5C31 /* tab-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD42321645882700BA5C31 /* tab-arrow.png */; };
+		7FD3DD9E1652316100466727 /* VTOneTokenTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3DD9D1652316100466727 /* VTOneTokenTransformer.m */; };
+		7FD81F0D165518E5000332AF /* FormulaCalculator.help in Resources */ = {isa = PBXBuildFile; fileRef = 7FD81F0C165518E5000332AF /* FormulaCalculator.help */; };
+		7FE9C37A165171C000506CBE /* RDTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C379165171C000506CBE /* RDTransformer.m */; };
+		7FFC6BEC164F9BEE006009BA /* ConstCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC6BEB164F9BEE006009BA /* ConstCategories.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F64D8B216313ECF00813BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F64D88116313ECE00813BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F64D88916313ECE00813BEB;
+			remoteInfo = myCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F0B4FDE1644D1FA0058E5C1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F0B4FE01644D22D0058E5C1 /* ParseKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F0D90B4163E2A45002C11A4 /* CalcFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcFunctions.h; sourceTree = "<group>"; };
+		7F0D90B5163E2A45002C11A4 /* CalcFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcFunctions.m; sourceTree = "<group>"; };
+		7F0D90B8163F19C9002C11A4 /* FunctionLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionLibrary.h; sourceTree = "<group>"; };
+		7F0D90B9163F19C9002C11A4 /* FunctionLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionLibrary.m; sourceTree = "<group>"; };
+		7F3716A11635AE0700B96ADC /* myCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = myCalc.entitlements; sourceTree = "<group>"; };
+		7F4FA00C164FBAF800E71E99 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		7F4FA00D164FBAF800E71E99 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		7F64D88A16313ECE00813BEB /* FormulaCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F64D88E16313ECE00813BEB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7F64D89116313ECE00813BEB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7F64D89216313ECE00813BEB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F64D89316313ECE00813BEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F64D89616313ECE00813BEB /* FormulaCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FormulaCalculator-Info.plist"; sourceTree = "<group>"; };
+		7F64D89816313ECE00813BEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F64D89A16313ECE00813BEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F64D89C16313ECE00813BEB /* FormulaCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FormulaCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		7F64D89E16313ECE00813BEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7F64D8A016313ECE00813BEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F64D8A116313ECE00813BEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F64D8A416313ECF00813BEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7F64D8A716313ECF00813BEB /* FormulaCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FormulaCalculator.xcdatamodel; sourceTree = "<group>"; };
+		7F64D8AE16313ECF00813BEB /* FormulaCalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormulaCalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F64D8AF16313ECF00813BEB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F64D8B616313ECF00813BEB /* FormulaCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FormulaCalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		7F64D8B816313ECF00813BEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F64D8BA16313ECF00813BEB /* myCalcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myCalcTests.h; sourceTree = "<group>"; };
+		7F64D8BB16313ECF00813BEB /* myCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myCalcTests.m; sourceTree = "<group>"; };
+		7F64D8C5163167FC00813BEB /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		7F64D8C6163167FC00813BEB /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		7F6A485616679A6300FEA6AE /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		7F6A485916679A7000FEA6AE /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		7F6A485B1668110D00FEA6AE /* formcalcicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = formcalcicon.icns; sourceTree = "<group>"; };
+		7F874153163212CF005FDF3D /* ParseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseKit.framework; path = ../ParseKit.framework; sourceTree = "<group>"; };
+		7FA047F2164D5C1400388A0B /* savelogg-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "savelogg-icon.png"; sourceTree = "<group>"; };
+		7FA047F5164DAE1500388A0B /* FormulaCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FormulaCalculator.entitlements; sourceTree = SOURCE_ROOT; };
+		7FA047F6164DB75700388A0B /* PrintRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintRoll.h; sourceTree = "<group>"; };
+		7FA047F7164DB75700388A0B /* PrintRoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintRoll.m; sourceTree = "<group>"; };
+		7FA04805164E19EA00388A0B /* ValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValueStore.h; path = ../ValueStore.h; sourceTree = "<group>"; };
+		7FA04806164E19EA00388A0B /* ValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValueStore.m; path = ../ValueStore.m; sourceTree = "<group>"; };
+		7FA04808164E1CEB00388A0B /* CDFunctionLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFunctionLib.h; sourceTree = "<group>"; };
+		7FA04809164E1CEC00388A0B /* CDFunctionLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFunctionLib.m; sourceTree = "<group>"; };
+		7FA0480B164E1CEC00388A0B /* CDFormulas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFormulas.h; sourceTree = "<group>"; };
+		7FA0480C164E1CEC00388A0B /* CDFormulas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFormulas.m; sourceTree = "<group>"; };
+		7FA0480E164E1CEC00388A0B /* CDParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDParameters.h; sourceTree = "<group>"; };
+		7FA0480F164E1CEC00388A0B /* CDParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDParameters.m; sourceTree = "<group>"; };
+		7FA04811164E1CED00388A0B /* CDPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPath.h; sourceTree = "<group>"; };
+		7FA04812164E1CED00388A0B /* CDPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPath.m; sourceTree = "<group>"; };
+		7FAD42321645882700BA5C31 /* tab-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-arrow.png"; sourceTree = "<group>"; };
+		7FD3DD9C1652316100466727 /* VTOneTokenTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTOneTokenTransformer.h; sourceTree = "<group>"; };
+		7FD3DD9D1652316100466727 /* VTOneTokenTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTOneTokenTransformer.m; sourceTree = "<group>"; };
+		7FD81F0C165518E5000332AF /* FormulaCalculator.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FormulaCalculator.help; sourceTree = "<group>"; };
+		7FE9C378165171C000506CBE /* RDTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTransformer.h; sourceTree = "<group>"; };
+		7FE9C379165171C000506CBE /* RDTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTransformer.m; sourceTree = "<group>"; };
+		7FFC6BEA164F9BEE006009BA /* ConstCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConstCategories.h; path = ../ConstCategories.h; sourceTree = "<group>"; };
+		7FFC6BEB164F9BEE006009BA /* ConstCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConstCategories.m; path = ../ConstCategories.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F64D88716313ECE00813BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F64D88F16313ECE00813BEB /* Cocoa.framework in Frameworks */,
+				7F874154163212CF005FDF3D /* ParseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F64D8AA16313ECF00813BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F64D8B016313ECF00813BEB /* SenTestingKit.framework in Frameworks */,
+				7F64D8B116313ECF00813BEB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F2CD9B41639658E00149395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD81F0C165518E5000332AF /* FormulaCalculator.help */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7F4FA010165051DB00E71E99 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F0D90B4163E2A45002C11A4 /* CalcFunctions.h */,
+				7F0D90B5163E2A45002C11A4 /* CalcFunctions.m */,
+				7FA04805164E19EA00388A0B /* ValueStore.h */,
+				7FA04806164E19EA00388A0B /* ValueStore.m */,
+				7FA047F6164DB75700388A0B /* PrintRoll.h */,
+				7FA047F7164DB75700388A0B /* PrintRoll.m */,
+				7FA04811164E1CED00388A0B /* CDPath.h */,
+				7FA04812164E1CED00388A0B /* CDPath.m */,
+				7FD3DD9C1652316100466727 /* VTOneTokenTransformer.h */,
+				7FD3DD9D1652316100466727 /* VTOneTokenTransformer.m */,
+				7FA0480E164E1CEC00388A0B /* CDParameters.h */,
+				7FA0480F164E1CEC00388A0B /* CDParameters.m */,
+				7FA0480B164E1CEC00388A0B /* CDFormulas.h */,
+				7FA0480C164E1CEC00388A0B /* CDFormulas.m */,
+				7FA04808164E1CEB00388A0B /* CDFunctionLib.h */,
+				7FA04809164E1CEC00388A0B /* CDFunctionLib.m */,
+				7F4FA00C164FBAF800E71E99 /* Constants.h */,
+				7F4FA00D164FBAF800E71E99 /* Constants.m */,
+				7FFC6BEA164F9BEE006009BA /* ConstCategories.h */,
+				7FFC6BEB164F9BEE006009BA /* ConstCategories.m */,
+				7FE9C378165171C000506CBE /* RDTransformer.h */,
+				7FE9C379165171C000506CBE /* RDTransformer.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		7F64D87F16313ECE00813BEB = {
+			isa = PBXGroup;
+			children = (
+				7F6A485B1668110D00FEA6AE /* formcalcicon.icns */,
+				7F6A485916679A7000FEA6AE /* iTunesArtwork@2x.png */,
+				7F6A485616679A6300FEA6AE /* iTunesArtwork.png */,
+				7F64D89416313ECE00813BEB /* FormulaCalculator */,
+				7F64D8B416313ECF00813BEB /* myCalcTests */,
+				7F64D88D16313ECE00813BEB /* Frameworks */,
+				7F64D88B16313ECE00813BEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F64D88B16313ECE00813BEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F64D88A16313ECE00813BEB /* FormulaCalculator.app */,
+				7F64D8AE16313ECF00813BEB /* FormulaCalculatorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F64D88D16313ECE00813BEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F874153163212CF005FDF3D /* ParseKit.framework */,
+				7F64D88E16313ECE00813BEB /* Cocoa.framework */,
+				7F64D8AF16313ECF00813BEB /* SenTestingKit.framework */,
+				7F64D89016313ECE00813BEB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F64D89016313ECE00813BEB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F64D89116313ECE00813BEB /* AppKit.framework */,
+				7F64D89216313ECE00813BEB /* CoreData.framework */,
+				7F64D89316313ECE00813BEB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7F64D89416313ECE00813BEB /* FormulaCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				7F4FA010165051DB00E71E99 /* Classes */,
+				7FA047F5164DAE1500388A0B /* FormulaCalculator.entitlements */,
+				7FAD42321645882700BA5C31 /* tab-arrow.png */,
+				7F2CD9B41639658E00149395 /* Resources */,
+				7F3716A11635AE0700B96ADC /* myCalc.entitlements */,
+				7F64D8A016313ECE00813BEB /* AppDelegate.h */,
+				7F64D8A116313ECE00813BEB /* AppDelegate.m */,
+				7F64D8C5163167FC00813BEB /* Calculator.h */,
+				7F64D8C6163167FC00813BEB /* Calculator.m */,
+				7F0D90B8163F19C9002C11A4 /* FunctionLibrary.h */,
+				7F0D90B9163F19C9002C11A4 /* FunctionLibrary.m */,
+				7F64D8A316313ECF00813BEB /* MainMenu.xib */,
+				7F64D8A616313ECF00813BEB /* FormulaCalculator.xcdatamodeld */,
+				7F64D89516313ECE00813BEB /* Supporting Files */,
+			);
+			name = FormulaCalculator;
+			path = FormulaCalculator;
+			sourceTree = "<group>";
+		};
+		7F64D89516313ECE00813BEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FA047F2164D5C1400388A0B /* savelogg-icon.png */,
+				7F64D89616313ECE00813BEB /* FormulaCalculator-Info.plist */,
+				7F64D89716313ECE00813BEB /* InfoPlist.strings */,
+				7F64D89A16313ECE00813BEB /* main.m */,
+				7F64D89C16313ECE00813BEB /* FormulaCalculator-Prefix.pch */,
+				7F64D89D16313ECE00813BEB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F64D8B416313ECF00813BEB /* myCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F64D8BA16313ECF00813BEB /* myCalcTests.h */,
+				7F64D8BB16313ECF00813BEB /* myCalcTests.m */,
+				7F64D8B516313ECF00813BEB /* Supporting Files */,
+			);
+			path = myCalcTests;
+			sourceTree = "<group>";
+		};
+		7F64D8B516313ECF00813BEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F64D8B616313ECF00813BEB /* FormulaCalculatorTests-Info.plist */,
+				7F64D8B716313ECF00813BEB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F64D88916313ECE00813BEB /* FormulaCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F64D8BF16313ECF00813BEB /* Build configuration list for PBXNativeTarget "FormulaCalculator" */;
+			buildPhases = (
+				7F64D88616313ECE00813BEB /* Sources */,
+				7F64D88716313ECE00813BEB /* Frameworks */,
+				7F64D88816313ECE00813BEB /* Resources */,
+				7F0B4FDE1644D1FA0058E5C1 /* CopyFiles */,
+				7FD3DDA9165392BD00466727 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormulaCalculator;
+			productName = myCalc;
+			productReference = 7F64D88A16313ECE00813BEB /* FormulaCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F64D8AD16313ECF00813BEB /* FormulaCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F64D8C216313ECF00813BEB /* Build configuration list for PBXNativeTarget "FormulaCalculatorTests" */;
+			buildPhases = (
+				7F64D8A916313ECF00813BEB /* Sources */,
+				7F64D8AA16313ECF00813BEB /* Frameworks */,
+				7F64D8AB16313ECF00813BEB /* Resources */,
+				7F64D8AC16313ECF00813BEB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F64D8B316313ECF00813BEB /* PBXTargetDependency */,
+			);
+			name = FormulaCalculatorTests;
+			productName = myCalcTests;
+			productReference = 7F64D8AE16313ECF00813BEB /* FormulaCalculatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F64D88116313ECE00813BEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Ole Kristian Ek Hornnes";
+			};
+			buildConfigurationList = 7F64D88416313ECE00813BEB /* Build configuration list for PBXProject "FormulaCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 7F64D87F16313ECE00813BEB;
+			productRefGroup = 7F64D88B16313ECE00813BEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F64D88916313ECE00813BEB /* FormulaCalculator */,
+				7F64D8AD16313ECF00813BEB /* FormulaCalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F64D88816313ECE00813BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F64D89916313ECE00813BEB /* InfoPlist.strings in Resources */,
+				7F64D89F16313ECE00813BEB /* Credits.rtf in Resources */,
+				7F64D8A516313ECF00813BEB /* MainMenu.xib in Resources */,
+				7FAD42331645882700BA5C31 /* tab-arrow.png in Resources */,
+				7FA047F3164D5C1400388A0B /* savelogg-icon.png in Resources */,
+				7FD81F0D165518E5000332AF /* FormulaCalculator.help in Resources */,
+				7F6A485716679A6300FEA6AE /* iTunesArtwork.png in Resources */,
+				7F6A485A16679A7000FEA6AE /* iTunesArtwork@2x.png in Resources */,
+				7F6A485C1668110D00FEA6AE /* formcalcicon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F64D8AB16313ECF00813BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F64D8B916313ECF00813BEB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F64D8AC16313ECF00813BEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		7FD3DDA9165392BD00466727 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export TARGETHELPDIR=${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FormulaCalculator.help\necho ${TARGETHELPDIR}\ncd ${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FormulaCalculator.help/Contents/Resources/English.lproj\nhiutil -Caf ${TARGETHELPDIR}/Contents/Resources/English.lproj/FormulaCalculator.help.helpindex pages";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F64D88616313ECE00813BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F64D89B16313ECE00813BEB /* main.m in Sources */,
+				7F64D8A216313ECE00813BEB /* AppDelegate.m in Sources */,
+				7F64D8A816313ECF00813BEB /* FormulaCalculator.xcdatamodeld in Sources */,
+				7F64D8C7163167FC00813BEB /* Calculator.m in Sources */,
+				7F0D90B6163E2A45002C11A4 /* CalcFunctions.m in Sources */,
+				7F0D90BA163F19C9002C11A4 /* FunctionLibrary.m in Sources */,
+				7FA047F8164DB75700388A0B /* PrintRoll.m in Sources */,
+				7FA04807164E19EA00388A0B /* ValueStore.m in Sources */,
+				7FA0480A164E1CEC00388A0B /* CDFunctionLib.m in Sources */,
+				7FA0480D164E1CEC00388A0B /* CDFormulas.m in Sources */,
+				7FA04810164E1CED00388A0B /* CDParameters.m in Sources */,
+				7FA04813164E1CED00388A0B /* CDPath.m in Sources */,
+				7FFC6BEC164F9BEE006009BA /* ConstCategories.m in Sources */,
+				7F4FA00E164FBAF800E71E99 /* Constants.m in Sources */,
+				7FE9C37A165171C000506CBE /* RDTransformer.m in Sources */,
+				7FD3DD9E1652316100466727 /* VTOneTokenTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F64D8A916313ECF00813BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F64D8BC16313ECF00813BEB /* myCalcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F64D8B316313ECF00813BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F64D88916313ECE00813BEB /* FormulaCalculator */;
+			targetProxy = 7F64D8B216313ECF00813BEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F64D89716313ECE00813BEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F64D89816313ECE00813BEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F64D89D16313ECE00813BEB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F64D89E16313ECE00813BEB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7F64D8A316313ECF00813BEB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F64D8A416313ECF00813BEB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7F64D8B716313ECF00813BEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F64D8B816313ECF00813BEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F64D8BD16313ECF00813BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7F64D8BE16313ECF00813BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7F64D8C016313ECF00813BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FormulaCalculator.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormulaCalculator/FormulaCalculator-Prefix.pch";
+				INFOPLIST_FILE = "FormulaCalculator/FormulaCalculator-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = FormulaCalculator;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F64D8C116313ECF00813BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FormulaCalculator.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormulaCalculator/FormulaCalculator-Prefix.pch";
+				INFOPLIST_FILE = "FormulaCalculator/FormulaCalculator-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = FormulaCalculator;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F64D8C316313ECF00813BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myCalc.app/Contents/MacOS/myCalc";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormulaCalculator/myCalc-Prefix.pch";
+				INFOPLIST_FILE = "myCalcTests/FormulaCalculatorTests-Info.plist";
+				PRODUCT_NAME = FormulaCalculatorTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7F64D8C416313ECF00813BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myCalc.app/Contents/MacOS/myCalc";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormulaCalculator/myCalc-Prefix.pch";
+				INFOPLIST_FILE = "myCalcTests/FormulaCalculatorTests-Info.plist";
+				PRODUCT_NAME = FormulaCalculatorTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F64D88416313ECE00813BEB /* Build configuration list for PBXProject "FormulaCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F64D8BD16313ECF00813BEB /* Debug */,
+				7F64D8BE16313ECF00813BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F64D8BF16313ECF00813BEB /* Build configuration list for PBXNativeTarget "FormulaCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F64D8C016313ECF00813BEB /* Debug */,
+				7F64D8C116313ECF00813BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F64D8C216313ECF00813BEB /* Build configuration list for PBXNativeTarget "FormulaCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F64D8C316313ECF00813BEB /* Debug */,
+				7F64D8C416313ECF00813BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F64D8A616313ECF00813BEB /* FormulaCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F64D8A716313ECF00813BEB /* FormulaCalculator.xcdatamodel */,
+			);
+			currentVersion = 7F64D8A716313ECF00813BEB /* FormulaCalculator.xcdatamodel */;
+			path = FormulaCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F64D88116313ECE00813BEB /* Project object */;
+}

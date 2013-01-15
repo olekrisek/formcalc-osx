@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <title>About the calculation engine</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="About the calculation engine">
+    <link href="hs_desktop/design.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="hs_mainwrapper">
+    <div id="hs_head">
+    <div id="hs_logo">
+    </div>
+    <div id="hs_headtext">
+    <h2>About the calculation engine</h2>
+    <p></p>
+    </div>
+    </div>
+
+    
+<p style="margin-bottom: 0in">This stuff is for those who have
+special interest in the method the calculation engine uses to
+calculate the answer. For those who are not, its not important as it
+is taken care of.</p>
+<p style="margin-bottom: 0in">The calculator uses a recursive model
+and a data stack for calculating the formulas. We go from left to
+right. For equally prioritized operands we do calculate the numbers
+straight forward. Like</p>
+<p align="CENTER" style="margin-bottom: 0in">2+3+4+5+6 
+</p>
+<p align="CENTER" style="margin-bottom: 0in">We do calculate
+2+3=5+4=9+5=14+6=20. 
+</p>
+<p align="LEFT" style="margin-bottom: 0in">In a formula with different
+priorities, like</p>
+<p align="CENTER" style="margin-bottom: 0in">7+3*4*5*6^2+8</p>
+<p align="LEFT" style="margin-bottom: 0in">Before we calculate 7+3, wee
+look at the next operator that is *<b> </b><span style="font-weight: normal">then
+we escalate to the next recursion level, while we leave the 7 on the
+stack, the next level calculate 3*4 looking ahead that 4*5 is also
+the same priority, 3*4=12, and 12*5=60, then before 60*6 is evaluated
+we see that 6^2 is a higher level, so we escalate again leaving the
+60 on the stack, calculate 6^2=36 (the next is +, so we do calculate
+this). Now we have 7, 60, and 36 on the stack. We now return to the
+second level, complete 60*36=2160, and + 8 is still at a lower level
+so we return to the first level and complete 7+2160=2167, as we see
+that +8 is the same level. The next is 2167+8, as we are at end there
+is no more to evaluate, so we do this, 2167+8=2175. </span>
+</p>
+<p align="CENTER" style="margin-bottom: 0in">7+3*4*5*6^2+8=2175</p>
+<p align="LEFT" style="margin-bottom: 0in">When we come to parenthesis,
+a parenthesis with a formula, basically takes position of a factor in
+the equation. When we look at a factor, it can be either a number, a
+constant,  a variable, a function, or a parenthesis. Every one of
+these, is calculated into a number, before we go further in the
+calculation. The variables and constant is taken from the memory, the
+parenthesis, we do escalate to a higher recursion level to calculate
+the content of the parenthesis. The same with a function as it have
+its argument enclosed in parenthesis, it might be a new formula. When
+we encounter the end parenthesis, we return back one level. Now we
+have a single number to perform the function on, before we go on with
+the next operand on this level.</p>
+<p align="LEFT" style="margin-bottom: 0in">We see that we now have
+broken the whole thing down to factors and operands. Both have its
+different recursion point, while the operands decide its recursion on
+the next operands priority compared to the one it is to perform. The
+factors recursion perform a complete evaluation of contents of
+parenthesis to turn its result into a number, a factor to go on with.
+Functions do the same, but perform the function on the result
+returning the result as a number, a factor to go on with.</p>
+<p align="LEFT" style="margin-bottom: 0in">If there is no end of
+parenthesis, the end of formula will act as one. All the recursion
+levels will end at the end of the formula, performing its functions
+to complete the formula. We do complete even if not all parenthesis
+are closed. For intermediate result, most calculators present only
+the result on the parenthesis level we HAVE closed. We do not, we
+complete as they where closed. It is more likely that one has
+forgotten to close a parenthesis, than leaving parts of the formula
+un-calculated.</p>
+<p align="LEFT" style="margin-bottom: 0in">Many calculators do
+register-math or stack-math on the operations as we type the
+operands, with no memory of what has been done before. Then it is
+more natural to only present the top of the stack while we go. Here,
+we do not preserve stack from one operation to the next, - we do
+store the keystrokes in the formula, - to re-evaluate the whole
+formula each time something new is appended to it.</p>
+<p align="LEFT" style="margin-bottom: 0in">The advantage to this, is
+that the user can see what he has entered in the formula, and then be
+more confident that the result is correct. It is easy to do something
+wrong, and in this way, it can be spotted and corrected instead of
+re-calculate the formula to see if you got the same answer.</p>
+<p align="LEFT" style="margin-bottom: 0in">I tried the engine on a bit
+complex formula, calculating the area of a tube (inside, outside and
+the ends). The formula 2*pi*r*h+2*pi*x*h+2*(pi*r^2-pi*x^2), With
+r=0.2, x=0.25, and h=100.000. I had to check with an ordinary
+calculator to compare the result. I had to try again four times,
+before I was confident I had the correct answer. Working with myCalc
+was a complete different thing. &nbsp;</p>
+
+    </div>
+  </body>
+</html>
